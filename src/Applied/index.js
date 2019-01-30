@@ -17,9 +17,13 @@ class Applied extends Component {
     }
 
     addCompany = (company) => {
-        console.log(company)
         const companies = [...this.state.companies, company]
         this.setState({ companies })
+    }
+
+    removeCompany = (name) => {
+        const companies = this.state.companies.filter(company => company !== name)
+        this.setState({companies})
       }
 
     render() {
@@ -27,6 +31,16 @@ class Applied extends Component {
             <div className='applied'>
                 <h1 className='companies-title'>Companies Applied For</h1>
                 <div className='companies-list-holder'>
+                    <div className='input-holder'>
+                        <button onClick={() => this.addCompany(this.state.name)} className='add-company-btn'>Add A Company</button>
+                        <input 
+                            name="name"
+                            value={this.state.name}
+                            onChange={this.handleChange}
+                            className='company-input' 
+                            placeholder='Company Name'>
+                        </input>
+                    </div>
                     <List
                         values={this.state.companies}
                         onChange={({ oldIndex, newIndex }) =>
@@ -35,16 +49,8 @@ class Applied extends Component {
                         }))
                         }
                         renderList={({ children, props }) => <ul {...props}>{children}</ul>}
-                        renderItem={({ value, props }) => <li className='companies' {...props}>{value}</li>}
+                        renderItem={({ value, props }) => <div><li className='companies' {...props}>{value}</li><button onClick={() => this.removeCompany(value)}>delete</button></div>}
                     />
-                    <button onClick={() => this.addCompany(this.state.name)} className='add-company-btn'>Add A Company</button>
-                    <input 
-                        name="name"
-                        value={this.state.name}
-                        onChange={this.handleChange}
-                        className='company-input' 
-                        placeholder='Company Name'>
-                    </input>
                 </div>
             </div>
         );

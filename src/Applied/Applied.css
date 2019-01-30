@@ -7,6 +7,10 @@ ul {
     padding-bottom: 1em;
 }
 
+.input-holder {
+    margin-bottom: 1em;
+}
+
 .companies-list-holder {
     text-align: center;
 }

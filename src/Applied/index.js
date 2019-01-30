@@ -14,7 +14,7 @@ class Applied extends Component {
         return (
             <div className='applied'>
                 <h1 className='companies-title'>Companies Applied For</h1>
-                <div className='list-holder'>
+                <div className='companies-list-holder'>
                     <List
                         values={this.state.companies}
                         onChange={({ oldIndex, newIndex }) =>

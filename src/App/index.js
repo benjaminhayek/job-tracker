@@ -6,8 +6,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Job Tracker</h1>
-        <Applied />
+        <h1 className='app-title'>Job Tracker</h1>
+        <div className='list-holder'>
+          <Applied />
+        </div>
       </div>
     );
   }

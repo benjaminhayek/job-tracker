@@ -1,0 +1,23 @@
+ul {
+    list-style: none;
+}
+
+.companies-title {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.input-holder {
+    margin-bottom: 1em;
+}
+
+.companies-list-holder {
+    text-align: center;
+}
+
+.companies {
+    text-align: center;
+    border: 1px solid black;
+    padding: .5em;
+    margin-bottom: .5em;
+}

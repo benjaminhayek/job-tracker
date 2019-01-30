@@ -3,19 +3,26 @@ import { List, arrayMove } from 'react-movable';
 import './Applied.css';
 
 class Applied extends Component {
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state = {
+            name: '',
             companies: ['GoSpotCheck', 'TrackVia']
         }
     }
 
+    handleChange = (e) => {
+        const {name, value} = e.target
+        this.setState({[name]: value})
+    }
+
+    addCompany = (company) => {
+        console.log(company)
+        const companies = [...this.state.companies, company]
+        this.setState({ companies })
+      }
+
     render() {
-        const divStyle = {textAlign: "center"}
-        if(this.props.isDragged === true) {
-            console.log('hi')
-            List.style={divStyle}
-        }
         return (
             <div className='applied'>
                 <h1 className='companies-title'>Companies Applied For</h1>
@@ -30,6 +37,14 @@ class Applied extends Component {
                         renderList={({ children, props }) => <ul {...props}>{children}</ul>}
                         renderItem={({ value, props }) => <li className='companies' {...props}>{value}</li>}
                     />
+                    <button onClick={() => this.addCompany(this.state.name)} className='add-company-btn'>Add A Company</button>
+                    <input 
+                        name="name"
+                        value={this.state.name}
+                        onChange={this.handleChange}
+                        className='company-input' 
+                        placeholder='Company Name'>
+                    </input>
                 </div>
             </div>
         );

@@ -11,6 +11,11 @@ class Applied extends Component {
     }
 
     render() {
+        const divStyle = {textAlign: "center"}
+        if(this.props.isDragged === true) {
+            console.log('hi')
+            List.style={divStyle}
+        }
         return (
             <div className='applied'>
                 <h1 className='companies-title'>Companies Applied For</h1>
@@ -22,8 +27,8 @@ class Applied extends Component {
                             companies: arrayMove(prevState.companies, oldIndex, newIndex)
                         }))
                         }
-                        renderList={({ children, props }) => <ul className='companies' {...props}>{children}</ul>}
-                        renderItem={({ value, props }) => <li {...props}>{value}</li>}
+                        renderList={({ children, props }) => <ul {...props}>{children}</ul>}
+                        renderItem={({ value, props }) => <li className='companies' {...props}>{value}</li>}
                     />
                 </div>
             </div>

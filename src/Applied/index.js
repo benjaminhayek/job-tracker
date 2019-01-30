@@ -12,16 +12,21 @@ class Applied extends Component {
 
     render() {
         return (
-          <List
-            values={this.state.companies}
-            onChange={({ oldIndex, newIndex }) =>
-              this.setState(prevState => ({
-                companies: arrayMove(prevState.items, oldIndex, newIndex)
-              }))
-            }
-            renderList={({ children, props }) => <ul className='companies' {...props}>{children}</ul>}
-            renderItem={({ value, props }) => <li {...props}>{value}</li>}
-          />
+            <div className='applied'>
+                <h1 className='companies-title'>Companies Applied For</h1>
+                <div className='list-holder'>
+                    <List
+                        values={this.state.companies}
+                        onChange={({ oldIndex, newIndex }) =>
+                        this.setState(prevState => ({
+                            companies: arrayMove(prevState.companies, oldIndex, newIndex)
+                        }))
+                        }
+                        renderList={({ children, props }) => <ul className='companies' {...props}>{children}</ul>}
+                        renderItem={({ value, props }) => <li {...props}>{value}</li>}
+                    />
+                </div>
+            </div>
         );
       }
 }

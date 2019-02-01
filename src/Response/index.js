@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { List, arrayMove } from 'react-movable';
-import './Applied.css';
+import './Responses.css';
 
 class Response extends Component {
     constructor(props){
@@ -42,14 +42,14 @@ class Response extends Component {
                         </input>
                     </div>
                     <List
-                        values={this.state.companies}
+                        values={this.state.responses}
                         onChange={({ oldIndex, newIndex }) =>
                         this.setState(prevState => ({
-                            companies: arrayMove(prevState.companies, oldIndex, newIndex)
+                            responses: arrayMove(prevState.responses, oldIndex, newIndex)
                         }))
                         }
                         renderList={({ children, props }) => <ul {...props}>{children}</ul>}
-                        renderItem={({ value, props }) => <div><li className='companies' {...props}>{value}</li><button onClick={() => this.removeCompany(value)}>delete</button></div>}
+                        renderItem={({ value, props }) => <div><li className='companies' {...props}>{value}</li><button onClick={() => this.removeResponse(value)}>delete</button></div>}
                     />
                 </div>
             </div>
@@ -57,4 +57,4 @@ class Response extends Component {
       }
 }
 
-export default Applied;
+export default Response;

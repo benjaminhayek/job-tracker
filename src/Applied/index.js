@@ -8,7 +8,6 @@ class Applied extends Component {
         this.state = {
             name: '',
             companies: ['GoSpotCheck', 'TrackVia'],
-            response: false
         }
     }
 

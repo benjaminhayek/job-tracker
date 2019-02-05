@@ -21,3 +21,17 @@ ul {
     padding: .5em;
     margin-bottom: .5em;
 }
+
+.not-replied {
+    background-color: red;
+    height: 25px;
+    width: 25px;
+    margin-left: 1em;
+}
+
+.have-replied {
+    background-color: green; 
+    height: 25px;
+    width: 25px;
+    margin-left: 1em;
+}

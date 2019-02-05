@@ -7,7 +7,7 @@ class Applied extends Component {
         super(props)
         this.state = {
             name: '',
-            companies: ['GoSpotCheck', 'TrackVia']
+            companies: ['GoSpotCheck', 'TrackVia'],
         }
     }
 
@@ -24,7 +24,11 @@ class Applied extends Component {
     removeCompany = (name) => {
         const companies = this.state.companies.filter(company => company !== name)
         this.setState({companies})
-      }
+    }
+
+    hasReplied = (value) => {
+        this.setState({response: !this.state.response})
+    }
 
     render() {
         return (
@@ -49,7 +53,7 @@ class Applied extends Component {
                         }))
                         }
                         renderList={({ children, props }) => <ul {...props}>{children}</ul>}
-                        renderItem={({ value, props }) => <div><li className='companies' {...props}>{value}</li><button onClick={() => this.removeCompany(value)}>delete</button></div>}
+                        renderItem={({ value, props }) => <div><li className='companies' {...props}>{value}</li><button onClick={() => this.removeCompany(value)}>delete</button><button onClick={() => this.hasReplied(value)} className={this.state.response === false ? 'not-replied' : 'have-replied'}></button></div>}
                     />
                 </div>
             </div>

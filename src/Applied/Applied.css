@@ -31,4 +31,7 @@ ul {
 
 .have-replied {
     background-color: green; 
+    height: 25px;
+    width: 25px;
+    margin-left: 1em;
 }

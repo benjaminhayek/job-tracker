@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { List, arrayMove } from 'react-movable';
-import './Responses.css';
+import './Response.css';
 
 class Response extends Component {
     constructor(props){

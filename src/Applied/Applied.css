@@ -21,3 +21,10 @@ ul {
     padding: .5em;
     margin-bottom: .5em;
 }
+
+.replied {
+    background-color: red;
+    height: 25px;
+    width: 25px;
+    margin-left: 1em;
+}

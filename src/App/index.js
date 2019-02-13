@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Applied from '../Applied';
 import Response from '../Response';
+import Outreach from '../Outreach';
 import './App.css';
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
         <div className='list-holder'>
           <Applied />
           <Response />
+          <Outreach />
         </div>
       </div>
     );

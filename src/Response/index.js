@@ -49,7 +49,7 @@ class Response extends Component {
                         }))
                         }
                         renderList={({ children, props }) => <ul {...props}>{children}</ul>}
-                        renderItem={({ value, props }) => <div><li className='companies' {...props}>{value}</li><button onClick={() => this.removeResponse(value)}>delete</button></div>}
+                        renderItem={({ value, props }) => <div><li className='companies' {...props}>{value}</li><button className='delete-btn' onClick={() => this.removeResponse(value)}>delete</button></div>}
                     />
                 </div>
             </div>

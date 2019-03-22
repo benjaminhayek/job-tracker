@@ -44,4 +44,6 @@ ul {
 
 .company-input {
     height: 30px;
+    background-color: azure;
+    border: none;
 }

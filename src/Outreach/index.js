@@ -29,7 +29,7 @@ class Response extends Component {
     render() {
         return (
             <div className='applied'>
-                <h1 className='companies-title'>connections From Companies</h1>
+                <h1 className='companies-title'>Connections From Companies</h1>
                 <div className='companies-list-holder'>
                     <div className='input-holder'>
                         <button onClick={() => this.addResponse(this.state.name)} className='add-company-btn'>Add A Response</button>

@@ -35,3 +35,17 @@ ul {
     width: 25px;
     margin-left: 1em;
 }
+
+.add-company-btn {
+    height: 30px;
+    background-color: bisque;
+    width: 100px;
+}
+
+.company-input {
+    height: 30px;
+    background-color: azure;
+    border: none;
+    width: 200px;
+    margin-left: 20px;
+}

@@ -1,0 +1,11 @@
+.companies-title {
+    font-size: 1.5em;
+    margin-top: 50px;
+}
+
+.delete-btn {
+    height: 20px;
+    border: none;
+    margin-bottom: 25px;
+    padding: 3px;
+}

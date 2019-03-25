@@ -14,6 +14,7 @@ class App extends Component {
           <Applied />
           <Response />
           <Outreach />
+          <TopCompanys />
         </div>
       </div>
     );

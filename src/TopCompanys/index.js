@@ -61,4 +61,4 @@ class TopCompanys extends Component {
       }
 }
 
-export default Applied;
+export default TopCompanys;

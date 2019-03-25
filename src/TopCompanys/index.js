@@ -33,7 +33,7 @@ class TopCompanys extends Component {
     render() {
         return (
             <div className='applied'>
-                <h1 className='companies-title'>Companies Applied For</h1>
+                <h1 className='companies-title'>Top Company's to Work For</h1>
                 <div className='companies-list-holder'>
                     <div className='input-holder'>
                         <button onClick={() => this.addCompany(this.state.name)} className='add-company-btn'>Add A Company</button>

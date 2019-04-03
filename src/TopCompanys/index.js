@@ -7,7 +7,7 @@ class TopCompanys extends Component {
         super(props)
         this.state = {
             name: '',
-            companies: ['Motley Fool', 'Pax8', 'Bitly', 'Travelers Haven', 'Havenly', 'Xero', 'FrontSteps', 'Quantum Metric'],
+            companies: ['Motley Fool', 'Pax8', 'Bitly', 'Travelers Haven', 'Havenly', 'Xero', 'FrontSteps', 'Quantum Metric', 'Google'],
         }
     }
 

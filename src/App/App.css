@@ -3,9 +3,20 @@
   padding: 0;
 }
 
+.app {
+  background-color: azure;
+}
+
 .app-title {
   text-align: center;
   margin: 10px;
+  color: red;
+  background-color: blanchedalmond;
+}
+
+.app-title:hover {
+  opacity: .85;
+  color: blue;
 }
 
 .App-header {

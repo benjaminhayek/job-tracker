@@ -7,7 +7,7 @@ class Response extends Component {
         super(props)
         this.state = {
             name: '',
-            responses: ['The Motley Fool', 'pax8', 'oracle']
+            responses: ['The Motley Fool', 'Pax8', 'Oracle', 'Home Advisor']
         }
     }
 

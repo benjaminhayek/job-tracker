@@ -7,7 +7,7 @@ class Applied extends Component {
         super(props)
         this.state = {
             name: '',
-            companies: ['GoSpotCheck', 'TrackVia', 'The Motley Fool', 'Pax8', 'Google', 'Home Advidor'],
+            companies: ['GoSpotCheck', 'TrackVia', 'The Motley Fool', 'Pax8', 'Google', 'Home Advisor', 'SWI'],
         }
     }
 
